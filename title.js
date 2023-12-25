@@ -47,7 +47,7 @@ function animateTitle(Title,delay){
       document.title=newtitle;
     },delay);
   }
-  animateTitle('@path',300);
+  animateTitle('@RXM',300);
 
   // Third script 
   document.addEventListener("mousemove",function(e){
