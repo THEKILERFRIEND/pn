@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tux</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        #startButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 2; /* Ensure the button is on top */
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            z-index: 1; /* Ensure the overlay is below the button and video */
+            backdrop-filter: blur(5px); /* Apply a blur effect to the overlay */
+        }
+        #videoPlayer {
+            display: none;
+            pointer-events: none; /* Disable pointer events on the video to prevent controls */
+        }
+    </style>
+</head>
+<body>
+
+<button id="startButton" onclick="startSite()">Click to Start</button>
+
+<div id="overlay">
+  <p>Discord @ pa_h <br/> Discord:<a href="https://discord.gg/Kgs2Qwb34K" target="_blank">Server</a></p>
+</div>
+
+<video id="videoPlayer" width="100%" height="100%" controls="false" preload="auto" loop>
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<script>
+    function startSite() {
+        // Hide the button
+        document.getElementById('startButton').style.display = 'none';
+
+        // Show the overlay
+        document.getElementById('overlay').style.display = 'flex';
+
+        // Show and play the video
+        var videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.style.display = 'block';
+        videoPlayer.volume = 0.36; // Set the volume to 20% (0.2)
+        videoPlayer.play();
+    }
+</script>
+
+</body>
+</html>
