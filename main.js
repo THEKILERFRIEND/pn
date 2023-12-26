@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Play background music
     backgroundMusic.play();
 
+    // Display and play the video background
+    videoBackground.style.display = "block";
+    videoBackground.play();
+
+    // Set disableRemotePlayback to prevent video pause on tab switch
+    videoBackground.setAttribute("disableRemotePlayback", "true");
+
     // Hide landing page with fade-out effect
     landingPage.style.transition = "opacity 1s";
     landingPage.style.opacity = 0;
@@ -15,10 +22,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function () {
       landingPage.style.display = "none";
     }, 1000);
-
-    // Show and play the video
-    videoBackground.style.display = "block";
-    videoBackground.volume = 0.36; // Set the volume to 36% (adjust as needed)
-    videoBackground.play();
   });
 });
