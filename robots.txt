@@ -1,0 +1,5 @@
+User-agent: HTTrack
+Disallow: /
+
+User-agent: *
+Disallow: /  # Disallow all other web crawlers by default
