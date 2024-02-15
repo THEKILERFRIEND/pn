@@ -39,8 +39,46 @@ body::before {
 .content {
   z-index: 1;
 }
+.particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "*";
+  color: white;
+  font-size: 1em;
+  z-index: 9999;
+  animation: fall linear infinite, appear 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
 
 
+.enter-button {
+  background-color: #000000;
+  color: rgb(186, 69, 233);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: none;
+  cursor: url('https://cdn.vypex.xyz/files/vy.cur'), auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: heartbeat 1.5s infinite;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
 
 .disable-inspect {
   position: fixed;
@@ -124,6 +162,21 @@ body::before {
   cursor: url('https://cdn.vypex.xyz/files/vy.cur'), auto;
 }
 
+.enter-button {
+  background-color: #000000;
+  color: rgb(186, 69, 233);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: none;
+  cursor: url('https://cdn.vypex.xyz/files/vy.cur'), auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: heartbeat 1.5s infinite;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
 .tiktok-icon,
 .telegram-icon {
   display: inline-block;
@@ -307,8 +360,8 @@ body {
 
 .gif-overlay {
   position: absolute;
-  top: 47%;
-  left: 50%;
+  top: 48%;
+  left: 51%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 60px;
@@ -324,6 +377,7 @@ body {
   margin-top: 10px;
   z-index: 1;
 }
+
 
 
 .tiktok-icon-link,
