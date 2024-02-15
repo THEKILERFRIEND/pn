@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const enterButton = document.querySelector(".enter-button");
   const landingPage = document.getElementById("landing-page");
 
-  enterButton.addEventListener("click", function() {
+  
+  landingPage.addEventListener("click", function() {
     // Define an array of video URLs
     const videoSources = [
       "https://cdn.discordapp.com/attachments/1187374876516958208/1189253728079978566/kakashi.mp4?ex=659d7dd8&is=658b08d8&hm=3369a0057e3e80e7baa98f794a7aa1a22b52ea8fca35c2cc5f1cb2b9ec1e3166&",
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Hide landing page with fade-out effect
     landingPage.style.transition = "opacity 1s";
     landingPage.style.opacity = 0;
+    
 
     setTimeout(function () {
       landingPage.style.display = "none";
