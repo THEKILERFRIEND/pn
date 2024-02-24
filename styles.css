@@ -358,15 +358,6 @@ body {
   animation: none;
 }
 
-.gif-overlay {
-  position: absolute;
-  top: 48%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 60px;
-  height: auto;
-}
 
 
 
