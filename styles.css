@@ -386,15 +386,15 @@ body {
 }
 
 .tiktok-icon-link {
-  background-image: url('https://cdn.discordapp.com/attachments/1187374876516958208/1188990155831378072/gu4.png?ex=659c885f&is=658a135f&hm=a9ade3d98debd1d78b9f96ac52e3fe8812a3172b334001c2ab7516f5157674f3&'); /* Replace with the actual URL of your TikTok icon */
+  background-image: url('https://rxm.cat/robloxlogo.png'); /* Replace with the actual URL of your TikTok icon */
 }
 
 .telegram-icon-link {
-  background-image: url('https://media.discordapp.net/attachments/1188938171157839953/1188949076960620634/250.png?ex=659c621d&is=6589ed1d&hm=8d5f1bba53efa4bab1406a7e505129ec84b21408c7bf03f38493a0328ebbeb2e&=&format=webp&quality=lossless'); /* Replace with the actual URL of your Telegram icon */
+  background-image: url('https://rxm.cat/guildedicon.png'); /* Replace with the actual URL of your Telegram icon */
 }
 
 .discord-icon-link {
-  background-image: url('https://cdn.discordapp.com/attachments/1138693314833559564/1153449245198778419/image.png'); /* Replace with the actual URL of your Telegram icon */
+  background-image: url('https://rxm.cat/discordicon.png'); /* Replace with the actual URL of your Telegram icon */
 }
 
 .tiktok-icon-link:hover,
