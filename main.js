@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const videoSources = [
       "https://cdn.gilcdn.com/ContentMediaGenericFiles/26c2be8a4acbb30ccdf3bd018cc3c9a2-Full.mp4?w=1280&h=720&ia=1",
       "https://cdn.gilcdn.com/ContentMediaGenericFiles/c7d705333162124bb7cb3c332a8b66c4-Full.mp4?w=1920&h=1080&ia=1",
-	"https://cdn.gilcdn.com/ContentMediaGenericFiles/55bef695aa0c7b20954f72ded2a6bf0e-Full.mp4?w=1920&h=1080&ia=1"
+	"https://cdn.gilcdn.com/ContentMediaGenericFiles/55bef695aa0c7b20954f72ded2a6bf0e-Full.mp4?w=1920&h=1080&ia=1",
+	    "https://cdn.gilcdn.com/ContentMediaGenericFiles/bafe55420cec5beda43a72bb441f254e-Full.mp4?w=1280&h=720&ia=1"
     ];
 
     // Randomly select a video source from the array
